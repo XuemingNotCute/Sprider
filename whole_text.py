@@ -20,6 +20,7 @@ links = []
 # with open('result.txt', 'w') as f:
 soup = BeautifulSoup(html_doc, "html.parser")
 
+# 核心在于通过 get_text() 方法获取去除掉标签之后的所有文本。
 whole_text = soup.get_text()
 
 print(whole_text)
